@@ -1,0 +1,13 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+#divNome{
+    display: none;
+}
+#divBatalhao{
+    display: none;
+}
+#divData{
+    display: none;
+}
