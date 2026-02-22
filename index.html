@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Penal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="butao1" class="butoens">
-        <button>clique em mim</button>
+    <!--
+    colocar um titulo calculadora penal
+    nome do acusado
+    id do acusado
+    valor total da fiança
+    valor total da multa
+    redução
+    valor total da pena
+    
+    artigos e função de buscar
+    atenuantes
+    ficha criminal
+    3 botoes:
+    calcular pena
+    copiar pena
+    limpar
+
+    )
+    -->
+    <h1>Calculadora Penal</h1>
+    <div id="divPrincipal">
+        <div id="dados">
+            <span>Nome do Acusado:</span>
+            <input type="text" id="inserir">
+            <span>Id do Acusado:</span>
+            <input type="text" id="inserir">
+        </div>
+        <div id="dados2">
+            <label>Valor total da Fiança:</label>
+            <label>Valor total da Multa:</label>
+            <label>Redução:</label>
+            <label>Pena Total:</label>
+        </div>
     </div>
-    <div id="divNome">
-        <label>Qual seu nome?</label><br>
-        <input id="idNome" class="textonormal">
-        <button id="enviar">enviar</button><br>
-        <p></p>
-    </div>
-        <div id="divBatalhao">
-        <label>De qual batalhão você é?</label><br>
-        <input type="text" id="batalhao" class="textonormal">
-    </div>
-    <div id="divData">
-        <label>Qual a data de hoje?</label><br>
-        <input type="date" id="data">
+    <div id="divSecundaria">
+        <div id="titulos">
+            <label>Artigos</label>
+            <label>Atenuantes</label>
+            <label>Ficha Criminal</label>
+        </div>
+        <div>
+            <input type="search" name="" id="">
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
