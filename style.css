@@ -14,6 +14,11 @@ img, picture, video, canvas, svg {
 h1{
   text-align: center;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #divPrincipal{
   color: white;
   overflow: hidden;
@@ -38,27 +43,59 @@ h1{
   width: 90%;
   height: 60vh;
   margin: 20px auto;
-  /*display: flex;*/
   border: 4px solid black;
   border-radius: 30px;
   padding: 10px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 #dados {
   display: flex;
   justify-content: center;
   gap: 30px;
   font-size: 20px;
+  align-items: center;
 }
 #dados2 {
   display: flex;
   justify-content: center;
   gap: 76px;
   font-size: 20px;
+  align-items: center;
 }
-#titulos{
-  display:flex;
+.artigos{
+  display: flex;
   justify-content: center;
-  gap: 200px;
-  font-size: 20px;
+  align-items: center;
+  width: 220px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 2px;
+  margin: 10px;
+  transition: background 0.3s;
+}
+.artigos:hover{
+  background-color: blue;
+  color: white;
+  transform: scale(1.05);
+}
+#artigosDiv,
+#atenuantesDiv,
+#fichaCriminal{
+  display: flex;
+  flex-direction: column;
+}
+#titulos,
+#colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+#colunas{
+  margin-top: 20px;
+  justify-content: center;
+}
+#fichaCriminal{
+  align-items: center;
 }
